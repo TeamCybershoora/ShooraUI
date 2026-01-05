@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Transpile Shoora UI package for SSR & App Router
+  transpilePackages: ["@cybershoora/shoora-ui"],
+
+  // Optional: strict TypeScript checks
+  typescript: {
+    ignoreBuildErrors: false
+  }
 };
 
 export default nextConfig;
