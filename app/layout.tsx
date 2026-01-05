@@ -1,6 +1,9 @@
 "use client";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+// app/layout.tsx
+import 'prismjs/themes/prism-tomorrow.css';
+
 
 export default function RootLayout({
   children,
